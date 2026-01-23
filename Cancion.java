@@ -10,7 +10,7 @@ public Cancion(String nombrecancion, String artista,String Genero) {
 public String getnombrecancion(){
     return nombrecancion;
 }
-public String setnombrecancion(String nombrecancion){
+public void setnombrecancion(String nombrecancion){
     this.nombrecancion = nombrecancion;
     
 
