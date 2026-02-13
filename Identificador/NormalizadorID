@@ -6,8 +6,8 @@ public class NormalizadorID{
     System.out.println("user_123: " + sucio + " " );
     System.out.println("limpiar: " + limpio + " ");
 
-     System.out.println(" user_123  " + System.identityHashCode(Sucio));
-    System.out.prinln( "limpiar " + System.identityHashCode(idLimpio));
+     System.out.println(" user_123  " + System.identityHashCode(sucio));
+    System.out.prinln( "limpiar " + System.identityHashCode(limpio));
     StringBuilder sb = new StringBuilder(sucio);
     }
 
