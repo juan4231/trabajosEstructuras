@@ -39,5 +39,4 @@ public void mostrarInfo(){
     System.out.println("genero:" + Genero);
     System.out.println("Duracion:" + duracion);
 }
-
-}
+} 
