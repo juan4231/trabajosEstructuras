@@ -1,21 +1,24 @@
-public class NormalizadorID{
-  
+public class NormalizadorID {
+
     public static void main(String[] args) {
-      String sucio =" user_123 ";
-    String limpio = sucio.trim().toUpperCase();
-    System.out.println("user_123: " + sucio + " " );
-    System.out.println("limpiar: " + limpio + " ");
 
-     System.out.println(" user_123:  " + System.identityHashCode(sucio));
-    System.out.println( "limpiar: " + System.identityHashCode(limpio));
-    StringBuilder sb = new StringBuilder(limpio);
-    sb.reverse();
-    String invertido = sb.ToString;
-    System.out.println("invertido"+ invertido);
-    System.out.println("Hash para string Bildwer" + System.identityHashCode(sb) );
+        String idSucio = " User_123 ";
 
+        String idLimpio = idSucio
+                .trim()
+                .toUpperCase()
+                .substring(0, 8);
+
+        System.out.println("ID sucio: " + idSucio);
+        System.out.println("ID limpio: " + idLimpio);
+
+        System.out.println("Hash ID sucio: " + System.identityHashCode(idSucio));
+        System.out.println("Hash ID limpio: " + System.identityHashCode(idLimpio));
+
+        StringBuilder sb = new StringBuilder(idLimpio);
+        sb.reverse();
+
+        String idInvertido = sb.toString();
+        System.out.println("ID invertido: " + idInvertido);
     }
-
-      
-
 }
