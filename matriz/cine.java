@@ -49,7 +49,7 @@ public static void inicializarSala(){
       public static void mostrarSala(){
         for (int i= 0;i < sala.length; i++){
        for (int j= 0;j < sala[i].length; j++){ 
-            System.out.println(sala[i][j]"imprime matriz");
+            System.out.println(sala[i][j]);
           } 
        }
         
