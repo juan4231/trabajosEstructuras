@@ -41,7 +41,7 @@ public class Carrito {
         if (carrito.isEmpty()) {
             System.out.println("El carrito está vacío.");
         } else {
-            System.out.println("🛒 Productos en el carrito:");
+            System.out.println(" Productos en el carrito:");
             for (Producto p : carrito) {
                 System.out.println(p);
             }
